@@ -1,6 +1,7 @@
 #!/bin/bash
 
 DB_URI="mysql://${DB_USER}:${DB_PASS}@${DB_PORT_3306_TCP_ADDR}:${DB_PORT_3306_TCP_PORT}/${DB_DB}"
+export DB_URI
 
 if [[ ! -f /bbot/buildbot.tac ]]; then
     echo "==> no buildbot environment, creating one"
